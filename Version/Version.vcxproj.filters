@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="detours">
+      <UniqueIdentifier>{0b1b22ed-076b-45fd-8d61-85124d0f0132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hook">
+      <UniqueIdentifier>{af9f6ef1-fd0e-4a6d-a1af-56f9c346ef0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="export">
+      <UniqueIdentifier>{965db7d0-0224-4de7-a029-7fc45ad48b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{0c6894f1-476b-459a-9f58-a0c2fa44910a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="detours\detours.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\disasm.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\image.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="detours\modules.cpp">
+      <Filter>detours</Filter>
+    </ClCompile>
+    <ClCompile Include="export\32_dll_hijack.cpp">
+      <Filter>export</Filter>
+    </ClCompile>
+    <ClCompile Include="export\64_init_list.cpp">
+      <Filter>export</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\detours_hook.cpp">
+      <Filter>hook</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\veh_hook.cpp">
+      <Filter>hook</Filter>
+    </ClCompile>
+    <ClCompile Include="log\static_log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detours\detours.h">
+      <Filter>detours</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\detver.h">
+      <Filter>detours</Filter>
+    </ClInclude>
+    <ClInclude Include="log\static_log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="export\64_exports.asm">
+      <Filter>export</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

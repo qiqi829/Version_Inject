@@ -1,0 +1,73 @@
+
+extern Hijack_GetFileVersionInfoA: DQ
+extern Hijack_GetFileVersionInfoByHandle: DQ
+extern Hijack_GetFileVersionInfoExA: DQ
+extern Hijack_GetFileVersionInfoExW: DQ
+extern Hijack_GetFileVersionInfoSizeA: DQ
+extern Hijack_GetFileVersionInfoSizeExA: DQ
+extern Hijack_GetFileVersionInfoSizeExW: DQ
+extern Hijack_GetFileVersionInfoSizeW: DQ
+extern Hijack_GetFileVersionInfoW: DQ
+extern Hijack_VerFindFileA: DQ
+extern Hijack_VerFindFileW: DQ
+extern Hijack_VerInstallFileA: DQ
+extern Hijack_VerInstallFileW: DQ
+extern Hijack_VerLanguageNameA: DQ
+extern Hijack_VerLanguageNameW: DQ
+extern Hijack_VerQueryValueA: DQ
+extern Hijack_VerQueryValueW: DQ
+
+.code
+HijackGetFileVersionInfoA proc
+		jmp Hijack_GetFileVersionInfoA
+HijackGetFileVersionInfoA endp
+HijackGetFileVersionInfoByHandle proc
+		jmp Hijack_GetFileVersionInfoByHandle
+HijackGetFileVersionInfoByHandle endp
+HijackGetFileVersionInfoExA proc
+		jmp Hijack_GetFileVersionInfoExA
+HijackGetFileVersionInfoExA endp
+HijackGetFileVersionInfoExW proc
+		jmp Hijack_GetFileVersionInfoExW
+HijackGetFileVersionInfoExW endp
+HijackGetFileVersionInfoSizeA proc
+		jmp Hijack_GetFileVersionInfoSizeA
+HijackGetFileVersionInfoSizeA endp
+HijackGetFileVersionInfoSizeExA proc
+		jmp Hijack_GetFileVersionInfoSizeExA
+HijackGetFileVersionInfoSizeExA endp
+HijackGetFileVersionInfoSizeExW proc
+		jmp Hijack_GetFileVersionInfoSizeExW
+HijackGetFileVersionInfoSizeExW endp
+HijackGetFileVersionInfoSizeW proc
+		jmp Hijack_GetFileVersionInfoSizeW
+HijackGetFileVersionInfoSizeW endp
+HijackGetFileVersionInfoW proc
+		jmp Hijack_GetFileVersionInfoW
+HijackGetFileVersionInfoW endp
+HijackVerFindFileA proc
+		jmp Hijack_VerFindFileA
+HijackVerFindFileA endp
+HijackVerFindFileW proc
+		jmp Hijack_VerFindFileW
+HijackVerFindFileW endp
+HijackVerInstallFileA proc
+		jmp Hijack_VerInstallFileA
+HijackVerInstallFileA endp
+HijackVerInstallFileW proc
+		jmp Hijack_VerInstallFileW
+HijackVerInstallFileW endp
+HijackVerLanguageNameA proc
+		jmp Hijack_VerLanguageNameA
+HijackVerLanguageNameA endp
+HijackVerLanguageNameW proc
+		jmp Hijack_VerLanguageNameW
+HijackVerLanguageNameW endp
+HijackVerQueryValueA proc
+		jmp Hijack_VerQueryValueA
+HijackVerQueryValueA endp
+HijackVerQueryValueW proc
+		jmp Hijack_VerQueryValueW
+HijackVerQueryValueW endp
+end
+
